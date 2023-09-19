@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import a from '../src/assets/a.webp'
+import b from '../src/assets/b.webp'
+import c from '../src/assets/c.webp'
+import d from '../src/assets/d.webp'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className='flex flex-col gap-4 mx-auto'>
+        <div className='side_1 mx-auto'>
+          <img src={a} alt='a'></img>
+        </div>
+        <div className='side_2 mx-auto'>
+          <img src={b} alt='b'></img>
+        </div>
+        <div className='side_3 mx-auto'>
+          <img src={c} alt='c'></img>
+        </div>
+        <div className='side_4 mx-auto'>
+          <img src={d} alt='d'></img>
+        </div>
+
+      </div>
+
     </div>
   );
 }
